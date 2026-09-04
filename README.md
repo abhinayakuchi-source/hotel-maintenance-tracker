@@ -259,18 +259,39 @@ Start Command:
 
 ## Cloud Architecture
 
-User / Hotel Staff
-        ↓
-Frontend Dashboard
-(HTML / CSS / JavaScript / React)
-        ↓
-REST API
-        ↓
-Render Cloud
-(Node.js + Express)
-        ↓
-JSON Data Storage
-(rooms.json / maintenance.json)
+## ☁️ Cloud Architecture
+
+```text
+                    ┌───────────────┐
+                    │     USER      │
+                    └───────┬───────┘
+                            │
+                            ▼
+              ┌────────────────────────┐
+              │       FRONTEND         │
+              │   React / HTML, CSS, JS│
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │     RENDER CLOUD       │
+              │ Node.js + Express      │
+              │       Backend          │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │       REST API         │
+              └───────────┬────────────┘
+                          │
+                          ▼
+              ┌────────────────────────┐
+              │     JSON STORAGE       │
+              │                        │
+              │     rooms.json         │
+              │ maintenance.json       │
+              └────────────────────────┘
+```
 
 ## Data Storage
 
@@ -394,10 +415,53 @@ The Cloud-Based Hotel Room Maintenance Tracker provides a simple digital solutio
 
 The project demonstrates the integration of:
 
-<img width="979" height="1575" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/25baea9f-a41d-4c0e-b9ce-992af284d33a" />
+## 🔄 System Flowchart
 
-
+```text
+                         ┌──────────────┐
+                         │     USER     │
+                         └──────┬───────┘
+                                │
+                                ▼
+                    ┌────────────────────┐
+                    │      FRONTEND      │
+                    │  React / HTML, CSS │
+                    │    and JavaScript  │
+                    └─────────┬──────────┘
+                              │
+                              ▼
+                    ┌────────────────────┐
+                    │   NODE.JS +        │
+                    │   EXPRESS BACKEND  │
+                    └─────────┬──────────┘
+                              │
+                              ▼
+                    ┌────────────────────┐
+                    │      REST API      │
+                    └─────────┬──────────┘
+                              │
+                    ┌─────────┴─────────┐
+                    ▼                   ▼
+             ┌─────────────┐     ┌─────────────────┐
+             │ rooms.json  │     │ maintenance.json│
+             └──────┬──────┘     └────────┬────────┘
+                    │                     │
+                    └──────────┬──────────┘
+                               ▼
+                    ┌────────────────────┐
+                    │  PROCESS & MANAGE   │
+                    │       DATA          │
+                    └─────────┬──────────┘
+                              │
+                              ▼
+                    ┌────────────────────┐
+                    │  DISPLAY RESULTS    │
+                    │ Room Status &       │
+                    │ Maintenance Requests│
+                    └────────────────────┘
+```
 The application can be further enhanced by integrating a cloud database, authentication, notifications, analytics, and additional hotel management features.
+
 
 ## Developed by
 
