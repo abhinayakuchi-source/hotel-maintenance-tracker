@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import "./App.css";
 
 // Base URL of the Node.js/Express backend.
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://hotel-maintenance-tracker-1.onrender.com/api";
 
 function RoomTile({ room }) {
   const cls = `room-tile room-${room.status.replace(/\s+/g, "-")}`;
