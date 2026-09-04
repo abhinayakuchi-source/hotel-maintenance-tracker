@@ -44,34 +44,33 @@ Instead of maintaining room maintenance information manually, the application pr
 
 ## 📁 Project Structure
 
-hotel-maintenance-tracker/
+```text
+hotel-maintenance-tracker
 │
-├── 📂 backend/
-│   ├── 📄 server.js
-│   ├── 📄 package.json
-│   │
-│   └── 📂 data/
-│       ├── 📄 rooms.json
-│       └── 📄 maintenance.json
+├── backend
+│   ├── server.js
+│   ├── package.json
+│   └── data
+│       ├── rooms.json
+│       └── maintenance.json
 │
-├── 📂 frontend-html/
-│   ├── 📄 index.html
-│   ├── 📄 style.css
-│   └── 📄 script.js
+├── frontend-html
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
 │
-├── 📂 frontend-react/
-│   ├── 📄 package.json
-│   │
-│   ├── 📂 public/
-│   │   └── 📄 index.html
-│   │
-│   └── 📂 src/
-│       ├── 📄 index.js
-│       ├── 📄 App.jsx
-│       └── 📄 App.css
+├── frontend-react
+│   ├── package.json
+│   ├── public
+│   │   └── index.html
+│   └── src
+│       ├── index.js
+│       ├── App.jsx
+│       └── App.css
 │
-├── 📄 .gitignore
-└── 📄 README.md
+├── .gitignore
+└── README.md
+```
 
 ## Features
 
