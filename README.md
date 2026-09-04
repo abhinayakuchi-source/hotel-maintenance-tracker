@@ -42,29 +42,36 @@ Instead of maintaining room maintenance information manually, the application pr
 
 - Render
 
-## Project Structure
+## 📁 Project Structure
 
 hotel-maintenance-tracker/
-├── backend/
-│   ├── server.js
-│   ├── package.json
-│   └── data/
-│       ├── rooms.json
-│       └── maintenance.json
 │
-├── frontend-html/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
+├── 📂 backend/
+│   ├── 📄 server.js
+│   ├── 📄 package.json
+│   │
+│   └── 📂 data/
+│       ├── 📄 rooms.json
+│       └── 📄 maintenance.json
 │
-└── frontend-react/
-    ├── package.json
-    ├── public/
-    │   └── index.html
-    └── src/
-        ├── index.js
-        ├── App.jsx
-        └── App.css
+├── 📂 frontend-html/
+│   ├── 📄 index.html
+│   ├── 📄 style.css
+│   └── 📄 script.js
+│
+├── 📂 frontend-react/
+│   ├── 📄 package.json
+│   │
+│   ├── 📂 public/
+│   │   └── 📄 index.html
+│   │
+│   └── 📂 src/
+│       ├── 📄 index.js
+│       ├── 📄 App.jsx
+│       └── 📄 App.css
+│
+├── 📄 .gitignore
+└── 📄 README.md
 
 ## Features
 
@@ -388,15 +395,8 @@ The Cloud-Based Hotel Room Maintenance Tracker provides a simple digital solutio
 
 The project demonstrates the integration of:
 
-Frontend
-    ↓
-REST API
-    ↓
-Node.js + Express
-    ↓
-Cloud Deployment using Render
-    ↓
-JSON Data Storage
+<img width="979" height="1575" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/25baea9f-a41d-4c0e-b9ce-992af284d33a" />
+
 
 The application can be further enhanced by integrating a cloud database, authentication, notifications, analytics, and additional hotel management features.
 
