@@ -1,0 +1,159 @@
+:root {
+  --primary: #1d4ed8;
+  --success: #16a34a;
+  --warning: #d97706;
+  --danger: #dc2626;
+  --bg: #f4f6f9;
+  --card-bg: #ffffff;
+  --text: #1f2937;
+  --border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary), #3b82f6);
+  color: white;
+  padding: 24px 32px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 6px;
+}
+
+main {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  margin-bottom: 14px;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.room-tile {
+  border-radius: 8px;
+  padding: 14px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+.room-Available { background: var(--success); }
+.room-Occupied { background: var(--warning); }
+.room-Under-Maintenance { background: var(--danger); }
+
+.room-tile small {
+  display: block;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+form input,
+form select {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  flex: 1;
+  min-width: 140px;
+}
+
+form button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+form button:hover {
+  background: #1e40af;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+}
+
+th {
+  color: #6b7280;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.75rem;
+}
+
+.badge-Pending { background: var(--warning); }
+.badge-In-Progress { background: var(--primary); }
+.badge-Resolved { background: var(--success); }
+
+.actions button {
+  margin-right: 6px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.btn-progress { background: var(--primary); }
+.btn-resolve { background: var(--success); }
+.btn-delete { background: var(--danger); }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+  font-size: 0.85rem;
+}

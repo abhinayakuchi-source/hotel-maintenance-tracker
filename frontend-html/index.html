@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hotel Room Maintenance Tracker</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🏨 Hotel Room Maintenance Tracker</h1>
+    <p>Cloud-based dashboard for tracking room status &amp; maintenance requests</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Rooms</h2>
+      <div id="rooms-list" class="grid"></div>
+    </section>
+
+    <section class="card">
+      <h2>Report a Maintenance Issue</h2>
+      <form id="maintenance-form">
+        <input type="text" id="roomNumber" placeholder="Room Number (e.g. 101)" required />
+        <input type="text" id="issue" placeholder="Describe the issue" required />
+        <select id="priority">
+          <option value="Low">Low</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Maintenance Requests</h2>
+      <table id="requests-table">
+        <thead>
+          <tr>
+            <th>Room</th>
+            <th>Issue</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Reported</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="requests-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Hotel Room Maintenance Tracker</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

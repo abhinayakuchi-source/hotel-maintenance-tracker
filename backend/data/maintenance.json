@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "roomNumber": "202",
+    "issue": "Air conditioner not cooling",
+    "priority": "High",
+    "status": "In Progress",
+    "reportedDate": "2026-08-30T09:00:00.000Z",
+    "resolvedDate": null
+  },
+  {
+    "id": 2,
+    "roomNumber": "102",
+    "issue": "Leaking bathroom faucet",
+    "priority": "Medium",
+    "status": "Pending",
+    "reportedDate": "2026-09-02T14:30:00.000Z",
+    "resolvedDate": null
+  }
+]
