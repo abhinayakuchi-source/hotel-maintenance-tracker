@@ -403,4 +403,6 @@ The application can be further enhanced by integrating a cloud database, authent
 ## Developed by
 
 Abhinaya Kuchi
-Give me star if you like this project
+
+
+## Give me star if you like this project
